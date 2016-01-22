@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jozzee.mysurvey.create.ManageQuestionActivity">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout_manageQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout_manageQuestion">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_manageQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nestedScrollView_manageQuestion"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TextInputLayout_question_manageQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/editText_question_manageQuestion"
+                    android:hint="Enter Question Text"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer Type"
+                android:id="@+id/textView4"
+                android:layout_marginTop="16dp" />
+
+            <RadioGroup
+                    android:checkedButton="@+id/radio_textType"
+                    android:id="@+id/selectTypeQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/color_set_out_line_background_radio_group"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_textType"
+                        android:background="@drawable/color_set_background_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Text"
+                        android:textColor="@color/white"
+                        android:checked="false" />
+
+                    <RadioButton
+
+                        android:id="@+id/radio_choiceType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/color_set_background_radio_button"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Choice"
+                        android:textColor="@color/white"
+                        android:checked="false" />
+                </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/choiceView"
+                android:layout_marginBottom="16dp">
+
+            </LinearLayout>
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    <!-- <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true">
+         <RadioGroup
+             android:checkedButton="@+id/choice"
+             android:id="@+id/toggle"
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:layout_marginBottom="16dp"
+             android:layout_marginLeft="50dp"
+             android:layout_marginRight="50dp"
+             android:layout_marginTop="16dp"
+             android:background="@drawable/color_set_out_line_background_radio_group"
+             android:orientation="horizontal">
+
+             <RadioButton
+                 android:layout_marginTop="1dp"
+                 android:layout_marginBottom="1dp"
+                 android:layout_marginLeft="1dp"
+                 android:id="@+id/text"
+                 android:background="@drawable/color_set_background_radio_button"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:button="@null"
+                 android:gravity="center"
+                 android:text="Text"
+                 android:textColor="@color/white"
+                 android:checked="false" />
+
+             <RadioButton
+                 android:layout_marginRight="1dp"
+                 android:layout_marginTop="1dp"
+                 android:layout_marginBottom="1dp"
+                 android:id="@+id/choice"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/color_set_background_radio_button"
+                 android:button="@null"
+                 android:gravity="center"
+                 android:text="Choice"
+                 android:textColor="@color/white"
+                 android:checked="false" />
+         </RadioGroup>
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/fragment_container_manageQuestion"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+         </LinearLayout>
+     </LinearLayout>-->
+</RelativeLayout>

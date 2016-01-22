@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+        <RelativeLayout
+            android:id="@+id/relativeLayout_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imageView_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/im_survey_form"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:background="#5c1b1b1b"
+                android:alpha="0.8"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:text="Survey Name"
+                android:singleLine="true"
+                android:scrollHorizontally="false"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/imageView_cardView"
+                android:id="@+id/surveyName_cardView"
+                android:freezesText="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/linearLayout_showDetail_cardView">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Creator"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="end"
+                            android:id="@+id/creator_cardView"
+                            android:freezesText="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0 Responses"
+                            android:id="@+id/numberOfTests_cardView"
+                            android:layout_weight="1"
+                            android:freezesText="true"
+                            android:singleLine="true"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Update"
+                            android:id="@+id/lastUpdate_cardView"
+                            android:freezesText="true"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:scrollHorizontally="false"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:textAlignment="gravity"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

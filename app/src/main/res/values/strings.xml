@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">My Survey</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="your_survey_name">Your Survey Name</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test_connect">TestConnectActivity</string>
+    <string name="select_image">Select Image</string>
+
+    <string name="login_title">MySurvey</string>
+    <string name="email_title">E-mail</string>
+    <string name="password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="register">Register</string>
+    <string name="login_error_message">Username or Password is incorrect</string>
+    <string name="title_activity_search_results">Search</string>
+    <string name="select_type_survey">Select Survey Type</string>
+    <string name="sort_by_new_update">new update</string>
+    <string name="sort_by_popular_test">popular test</string>
+    <string name="title_activity_create_survey">CreateSurveyActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_manage_question">ManageQuestionActivity</string>
+    <string-array name="selectEditType">
+        <item>Edit with new version</item>
+        <item>Edit something</item>
+    </string-array>
+    //--------------------------------------------------------------------------------------------
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="askSureToDelete">You sure to delete?</string>
+    <string name="messageDetailDeleteQuestion">Delete this question may effect the response and user.</string>
+    <string name="warning">Warning!</string>
+    <string name="messageDetailExitCreateSurvey">Not save something this survey may affect this. You sure to exit.</string>
+    <string name="messageDetailDeleteSurvey">All data have a delete your sure to delete this survey.</string>
+    <string name="messageDetailClearResponses">All responses be delete your sure to clear responses </string>
+    <string name="messageDetailExitDoSurvey">You sure to exit.</string>
+    <string name="title_activity_view_survvey">ViewSurveyActivity</string>
+    <string name="title_activity_mysurvey">My Survey</string>
+    <string name="cardView">card view</string>
+    <string name="listView">list view</string>
+    <string name="takePhoto">Take photo</string>
+    <string name="choosePhoto">Choose photo</string>
+    <string name="setDefaultImage">Set default</string>
+    <string name="deleteSurvey">Delete Survey</string>
+    <string name="title_activity_edit_question">EditQuestionActivity</string>
+    <string name="clearResponses">Clear Responses</string>
+    <string name="title_activity_do_survey">DoSurveyActivity</string>
+    <string name="thanksForAnswer">Thanks You For Answer</string>
+    <string name="messageDetailSendAnswer">You want send answer to server.</string>
+    <string name="title_activity_responses">ResponsesActivity</string>
+    <string name="titleActivityResponses">Responses</string>
+    <string name="title_activity_view_answer_responses">ViewAnswerResponsesActivity</string>
+    <string name="title_activity_analyze">AnalyzeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="errorEmailIsEmpty">Enter your Email</string>
+    <string name="errorEmailNotValid">Email not valid</string>
+    <string name="errorPasswordIsEmpty">Enter your Password</string>
+    <string name="errorPasswordLeastNumber">Your password must have at least 6 letters</string>
+    <string name="errorPasswordMostNumber">Your password must have at most 32 letters.</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_for_got_password">ForGotPasswordActivity</string>
+    <string name="title_activity_scheme_forgot_password">SchemeForgotPasswordActivity</string>
+
+
+
+
+</resources>

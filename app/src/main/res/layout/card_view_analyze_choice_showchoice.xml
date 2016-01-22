@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView_analyzeChoice_showChoice"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout_detailChoice_cardView_analyzeChoice">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout_analyzeChoice_showChoice"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView_color_cardView_analyzeChoice"
+                    android:background="@color/red_700" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choice...."
+                    android:id="@+id/textView_Choice_cardView_analyzeChoice"
+                    android:singleLine="true"
+                    android:scrollHorizontally="false"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView_color_cardView_analyzeChoice"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toLeftOf="@+id/textView_percent_analyzeChoice"
+                    android:layout_toStartOf="@+id/textView_percent_analyzeChoice" />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="1024"
+                    android:id="@+id/textView_numberSelectThisChoice_cardView_analyzeChoice"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="right"
+                    android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="12.97%"
+                    android:id="@+id/textView_percent_analyzeChoice"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView_numberSelectThisChoice_cardView_analyzeChoice"
+                    android:layout_toStartOf="@+id/textView_numberSelectThisChoice_cardView_analyzeChoice"
+                    android:gravity="right"
+                    android:layout_marginLeft="8dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relativeLayout_analyzeChoice_showChoice"
+                android:background="#F0F0F0"/>
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

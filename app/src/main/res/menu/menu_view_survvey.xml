@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jozzee.mysurvey.edit.ViewSurveyActivity">
+    <item android:id="@+id/action_deleteSurvey"
+        android:title="@string/deleteSurvey"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_clearResponses"
+        android:title="@string/clearResponses"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+</menu>

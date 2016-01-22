@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jozzee.mysurvey.create.ManageQuestionActivity">
+
+    <item android:id="@+id/action_add_manageQuestion"
+        android:title="Add Question"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_done"
+        app:showAsAction="ifRoom" />
+</menu>

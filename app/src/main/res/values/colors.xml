@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorIconWhite">#FFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentLight">#F48FB1</color>
+    <color name="colorControlHighlight">#BBDEFB</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDriver">#B6B6B6</color>
+
+    <color name="transparent">#A0FFFFFF</color>
+    <color name="transparent2">#5c1b1b1b</color>
+    <color name="transparent3">#9c1b1b1b</color>
+    <color name="transparentColorPrimary">#A02196F3</color>
+    <color name="transparentColorPrimaryDark">#A01976D2</color>
+    <color name="transparentColorPrimaryLight">#A0BBDEFB</color>
+    <color name="transparentColorAccent">#A0FF4081</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="red">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="green">#4caf50</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink_press">#F48FB1</color>
+    <color name="black">#000000</color>
+</resources>

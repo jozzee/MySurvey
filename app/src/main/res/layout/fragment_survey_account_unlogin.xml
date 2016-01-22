@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.jozzee.mysurvey.main.SurveyAccountUnLoginFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout_unLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nestedScrollView_unLogin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/linearLayout_unLogin"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Survey"
+                    android:id="@+id/textView_appName_unLogin"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="32dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_email_unLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText_email_unLogin"
+                        android:hint="@string/email_title"
+                        android:inputType="textEmailAddress"
+                        android:textSize="20dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TextInputLayout_password_unLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText_password_unLogin"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"
+                        android:autoText="false"
+                        android:textSize="20dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incorrect email or password"
+                    android:id="@+id/textView_error_unLogin"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/red_700"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_login_unLogin"
+                    android:textColor="#ffffff"
+                    android:text="@string/button_login"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot?"
+                        android:id="@+id/textView_forgot_unLogin"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/textView_center_forgotAndRegister_unLogin"
+                        android:layout_toStartOf="@+id/textView_center_forgotAndRegister_unLogin"
+                        android:layout_marginRight="32dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:id="@+id/textView_register_unLogin"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView_center_forgotAndRegister_unLogin"
+                        android:layout_toEndOf="@+id/textView_center_forgotAndRegister_unLogin"
+                        android:layout_marginLeft="32dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:id="@+id/textView_center_forgotAndRegister_unLogin"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

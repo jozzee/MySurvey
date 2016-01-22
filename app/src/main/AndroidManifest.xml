@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jozzee.mysurvey" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".search.SearchResultsActivity" />
+        </activity>
+        <activity
+            android:name=".register.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".search.SearchResultsActivity"
+            android:label="@string/title_activity_search_results" >
+
+            <!-- to identify this activity as "searchable" -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".create.CreateSurveyActivity"
+            android:label="@string/title_activity_create_survey" >
+        </activity>
+        <activity
+            android:name=".create.ManageQuestionActivity"
+            android:label="@string/title_activity_manage_question"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".edit.ViewSurveyActivity"
+            android:label="@string/title_activity_view_survvey" >
+        </activity>
+        <activity
+            android:name=".mysurvey.MySurveyActivity"
+            android:label="@string/title_activity_mysurvey" >
+        </activity>
+        <activity
+            android:name=".edit.EditQuestionActivity"
+            android:label="@string/title_activity_edit_question" >
+        </activity>
+        <activity
+            android:name=".dosurvey.DoSurveyActivity"
+            android:label="@string/title_activity_do_survey"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".responses.ResponsesActivity"
+            android:label="@string/title_activity_responses" >
+        </activity>
+        <activity
+            android:name=".viewanswer.ViewAnswerResponsesActivity"
+            android:label="@string/title_activity_view_answer_responses" >
+        </activity>
+        <activity
+            android:name=".analyze.AnalyzeActivity"
+            android:label="@string/title_activity_analyze" >
+        </activity>
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".forgot.ForGotPasswordActivity"
+            android:label="@string/title_activity_for_got_password" >
+        </activity>
+        <activity
+            android:name=".Scheme.SchemeForgotPasswordActivity"
+            android:label="@string/title_activity_scheme_forgot_password" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="forgot"
+                    android:scheme="mysurvey" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".support.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+</manifest>
